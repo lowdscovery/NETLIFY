@@ -1,0 +1,185 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+}
+header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  padding: 20px 10px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s;
+}
+.logo{
+	font-size: 2em;
+	text-decoration: none;
+	color: purple;
+	font-weight: bold;
+}
+.logo span{
+	color: green;
+}
+.nav{
+  position: relative;
+  display: flex;
+}
+.nav li{
+	list-style: none;
+}
+.nav a{
+	text-decoration: none;
+	color: purple;
+	margin-left: 30px;
+	font-weight: 700;
+}
+header .nav li a:hover{
+	color: #fb119f;
+	border-bottom: 2px solid #fb119f;
+}
+.row{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./resto/orf.jpg);
+
+}
+.row .row1{
+	padding-top: 200px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+}
+.row .row1 .row2{
+	padding-top: 20px;
+	text-align: center;
+}
+input{
+	width: 30%;
+	border: none;
+	background: none;
+	padding: 10px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+	text-transform: capitalize;
+}
+input[type="submit"]{
+	font-size: 1em;
+	font-weight: 700;
+	color: #fff;
+	background: none;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #111;
+	letter-spacing: 2px;
+}
+input[type="submit"]:hover{
+	color: #fb119f;
+	border: 1px solid #fb119f;
+}
+.creer{
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+@media(max-width: 991px){
+		header,header.sticky{/*3em etape*/
+	padding: 10px 20px;
+}
+header.nav li{/*4em etape*/
+	margin-left: 0px;
+}
+header.nav li a{
+	text-decoration: none;
+	color: #111;
+	font-size: 1.6em;
+	font-weight: 300;
+}
+.nav{
+	display: none;
+}
+.menuToggle{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-size: 30px;
+	background-image: url(./resto/index.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.menuToggle.active{
+	background-image: url(./resto/index.png);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+header .nav.active{
+ width: 100%;
+ height:100vh;
+ position: fixed;
+ top: 60px;
+ left: 0;
+ display: flex;
+ flex-direction: column;
+ background: #2c3e50;
+ align-items: center;
+}
+
+.nav li {
+	margin-top: 10px;
+	padding-bottom: 30px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.nav li a{
+	font-size: 18px;
+	color: #fff;
+}
+header.sticky .menuToggle{
+	filter: invert(1);
+}
+   .row .row1 {
+  padding-top: 100px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  display: block;
+}
+input {
+  width: 75%;
+  border: none;
+  background: none;
+  padding: 1px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+  text-transform: capitalize;
+}
+}
+}
+.error{
+	background: F2DEDE;
+	color: #A94442;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+}
